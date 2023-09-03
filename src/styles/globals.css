@@ -2,7 +2,27 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
+/* スクロールバーを非表示にするスタイル */
+.hide-scrollbar::-webkit-scrollbar {
+  width: 0.5em;
+}
+
+.hide-scrollbar::-webkit-scrollbar-thumb {
+  background-color: transparent;
+}
+
+/* @layer base {
+  body {
+    padding: 0;
+    margin: 0;
+    @apply bg-gray-200;
+  }
+} */
+
+* {
+  box-sizing: border-box;
+}
+/* :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
@@ -14,9 +34,9 @@
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
   }
-}
+} */
 
-body {
+/* body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
@@ -24,4 +44,4 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
-}
+} */
